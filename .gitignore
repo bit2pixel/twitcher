@@ -1,0 +1,6 @@
+*sqlite3
+*pyc
+*.idea
+*swp
+config.ini
+migrations
