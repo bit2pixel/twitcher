@@ -13,6 +13,8 @@ These might not be the best practices, so if you have anything in mind don't hes
 
 ## Installing
 
+Run the install script and follow the instructions.
+
     cd twitcher
     ./install.sh
 
