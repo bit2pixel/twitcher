@@ -13,7 +13,7 @@ import os
 from os.path import dirname, join
 
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read('config.ini.test')
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
