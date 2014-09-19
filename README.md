@@ -7,6 +7,10 @@ Twitcher is a little read-only twitter client made for messing around with Angul
 You can see how to consume an API with ngResource.
 These might not be the best practices, so if you have anything in mind don't hesitate to create a pull request.
 
+## Cloning
+
+    git clone git@github.com:bit2pixel/twitcher.git
+
 ## Installing
 
     ./setup.sh
