@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html ng-app="twitcher">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Twitcher - {% block title %}{% endblock %}</title>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,100" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="{% static "third_party/reset.css" %}" />
+  <link rel="stylesheet" type="text/css" href="{% static "twitcher/styles/base.css" %}" />
+  <style>
+    a { color: #[[linkColor]] !important }
+  </style>
+</head>
+<body style="background-color: #[[backgroundColor]]">
+  <div class="background" style="background: url([[backgroundImage]])"></div>
+  <div class="container">
+    {% block content %}{% endblock %}
+  </div>
+  <script src="{% static "third_party/angular.js" %}"></script>
+  <script src="{% static "third_party/angular-resource.js" %}"></script>
+  <script src="{% static "third_party/angular-animate.js" %}"></script>
+  <script src="{% static "third_party/angular-sanitize.js" %}"></script>
+  <script src="{% static "twitcher/scripts/twitcher.module.js" %}"></script>
+  <script src="{% static "twitcher/scripts/twitcher.controller.js" %}"></script>
+  <script src="{% static "twitcher/scripts/twitcher.directives.js" %}"></script>
+  <script src="{% static "twitcher/scripts/twitcher.resources.js" %}"></script>
+</body>
+</html>

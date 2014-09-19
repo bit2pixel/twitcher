@@ -1,5 +1,6 @@
 import json
 from twython import Twython
+from twython import TwythonAuthError
 
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
@@ -33,9 +34,12 @@ def timeline(request, screen_name):
     # the user object if set to True.
     trim_user = request.GET.get('trim_user', False)
 
-    timeline = twitter.get_user_timeline(screen_name=screen_name,
-                                         count=count,
-                                         trim_user=trim_user)
+    try:
+        timeline = twitter.get_user_timeline(screen_name=screen_name,
+                                             count=count,
+                                             trim_user=trim_user)
+    except TwythonAuthError:
+        timeline = []
 
     content = json.dumps(timeline)
 

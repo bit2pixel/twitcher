@@ -1,0 +1,106 @@
+*
+  &:focus
+    outline: 0 !important
+
+body, html
+  background-color: #fff
+  color: 444
+  font-family: "Avenir Book", "Helvetica Neue", "Gotham Rounded", Helvetica, Arial, sans-serif
+  min-width: 500px
+  height: 1110px
+
+.background
+  background-size: cover !important
+  background-position: 50% 50% !important
+  -webkit-filter: blur(100px)
+  -moz-filter: blur(100px)
+  -o-filter: blur(100px)
+  -ms-filter: blur(100px)
+  filter: blur(100px)
+  height: 150%
+  width: 150%
+  position: fixed
+  z-index: 1
+
+.screen-name
+  text-align: center
+  position: relative
+  z-index: 9999
+
+  input
+    background: none
+    border: none
+    font-family: 'Raleway', sans-serif
+    font-weight: 100
+    font-size: 55px
+    padding: 10px
+    border-bottom: 1px solid #aaa
+    text-align: center
+    width: 480px
+    margin-bottom: 20px
+
+    &::-moz-placeholder
+      color: #ccc
+      -moz-transition: ease-in-out 200ms
+    &::-webkit-input-placeholder
+      color: #ccc
+      -webkit-transition: ease-in-out 200ms
+
+    &:hover
+      &::-moz-placeholder
+        color: #aaa
+      &::-webkit-input-placeholder
+        color: #aaa
+
+    &:focus
+      &::-moz-placeholder
+        color: transparent
+      &::-webkit-input-placeholder
+        color: transparent
+
+.timeline
+  position: relative
+  z-index: 9999
+
+  .tweet
+    font-family: 'Raleway', sans-serif
+    width: 480px
+    margin: 0 auto 20px
+    display: table
+    opacity: 1
+
+    -webkit-transition: 500ms ease-in-out all
+
+    .image
+      border-radius: 50px
+      display: table-cell
+      vertical-align: middle
+      width: 48px
+      padding: 15px 20px 10px 0px
+
+      img
+        border-radius: 50px
+        opacity: 0.1
+
+        &.fade-in
+          opacity: 1
+
+    .content
+      display: table-cell
+      vertical-align: middle
+
+      .photo
+        width: 400px
+        border-radius: 4px
+
+    &.ng-hide
+      opacity: 0
+
+    &.ng-enter
+      opacity: 0
+
+    &.ng-enter-active
+      opacity: 1
+
+    &.ng-hide-add, &.ng-hide-remove
+      display: block !important

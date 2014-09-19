@@ -1,6 +1,9 @@
-*sqlite3
-*pyc
+*.sqlite3
+*.pyc
 *.idea
+*.css
+!static/third_party/*
 *swp
 config.ini
 migrations
+.DS_Store

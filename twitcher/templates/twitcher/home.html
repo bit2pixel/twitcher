@@ -1,0 +1,27 @@
+{% extends 'twitcher/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div ng-controller="TimelineCtrl">
+  <div class="screen-name">
+    <input ng-model="screen_name"
+           ng-model-options="{updateOn: 'default blur', debounce: {'default': 800, 'blur': 0} }"
+           placeholder="@bit2pixel"
+           style="color: #[[textColor]]">
+  </div>
+
+  <div class="timeline">
+    <div class="tweet" ng-repeat="tweet in timeline">
+      <span class="image">
+        <img fade-image src="[[tweet.user.profile_image_url]]">
+      </span>
+      <span class="content" style="color: #[[textColor]]"
+            ng-bind-html="processEntities(tweet)"></span>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

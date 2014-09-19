@@ -8,8 +8,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
-import os
 import configparser
+import os
+from os.path import dirname, join
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -83,7 +84,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/assets/'
+
+STATIC_ROOT = join(dirname(dirname(__file__)), "assets")
+
+STATICFILES_DIRS = (join(dirname(dirname(__file__)), "static"),)
+
+# TEMPLATES SETTINGS
+TEMPLATE_DIRS = (
+    join(dirname(dirname(__file__)), "templates"),
+)
 
 # LOGIN SETTINGS
 LOGIN_URL = '/login/'
