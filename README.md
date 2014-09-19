@@ -1,6 +1,8 @@
-# Twitcher
+========
+Twitcher
+========
 
-Created this little read-only twitter client for messing around with AngularJS
+Twitcher is a little read-only twitter client made for messing around with AngularJS + Django.
 
 You can see how to consume an API with ngResource.
 These might not be the best practices, so if you have anything in mind don't hesitate to create a pull request.
