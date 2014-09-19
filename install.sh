@@ -1,3 +1,5 @@
+#!/bin/bash
+
 virtualenv twitcher_env
 source twitcher_env/bin/activate
 pip install -r requirements.txt
