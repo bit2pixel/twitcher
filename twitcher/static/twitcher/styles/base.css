@@ -1,0 +1,88 @@
+*:focus {
+  outline: 0 !important; }
+
+body, html {
+  background-color: white;
+  color: 444;
+  font-family: "Avenir Book", "Helvetica Neue", "Gotham Rounded", Helvetica, Arial, sans-serif;
+  min-width: 500px;
+  height: 1110px; }
+
+.background {
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  -webkit-filter: blur(100px);
+  -moz-filter: blur(100px);
+  -o-filter: blur(100px);
+  -ms-filter: blur(100px);
+  filter: blur(100px);
+  height: 150%;
+  width: 150%;
+  position: fixed;
+  z-index: 1; }
+
+.screen-name {
+  text-align: center;
+  position: relative;
+  z-index: 9999; }
+  .screen-name input {
+    background: none;
+    border: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    font-size: 55px;
+    padding: 10px;
+    border-bottom: 1px solid #aaaaaa;
+    text-align: center;
+    width: 480px;
+    margin-bottom: 20px; }
+    .screen-name input::-moz-placeholder {
+      color: #cccccc;
+      -moz-transition: ease-in-out 200ms; }
+    .screen-name input::-webkit-input-placeholder {
+      color: #cccccc;
+      -webkit-transition: ease-in-out 200ms; }
+    .screen-name input:hover::-moz-placeholder {
+      color: #aaaaaa; }
+    .screen-name input:hover::-webkit-input-placeholder {
+      color: #aaaaaa; }
+    .screen-name input:focus::-moz-placeholder {
+      color: transparent; }
+    .screen-name input:focus::-webkit-input-placeholder {
+      color: transparent; }
+
+.timeline {
+  position: relative;
+  z-index: 9999; }
+  .timeline .tweet {
+    font-family: "Raleway", sans-serif;
+    width: 480px;
+    margin: 0 auto 20px;
+    display: table;
+    opacity: 1;
+    -webkit-transition: 500ms ease-in-out all; }
+    .timeline .tweet .image {
+      border-radius: 50px;
+      display: table-cell;
+      vertical-align: middle;
+      width: 48px;
+      padding: 15px 20px 10px 0px; }
+      .timeline .tweet .image img {
+        border-radius: 50px;
+        opacity: 0.1; }
+        .timeline .tweet .image img.fade-in {
+          opacity: 1; }
+    .timeline .tweet .content {
+      display: table-cell;
+      vertical-align: middle; }
+      .timeline .tweet .content .photo {
+        width: 400px;
+        border-radius: 4px; }
+    .timeline .tweet.ng-hide {
+      opacity: 0; }
+    .timeline .tweet.ng-enter {
+      opacity: 0; }
+    .timeline .tweet.ng-enter-active {
+      opacity: 1; }
+    .timeline .tweet.ng-hide-add, .timeline .tweet.ng-hide-remove {
+      display: block !important; }

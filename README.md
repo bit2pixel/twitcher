@@ -16,6 +16,9 @@ These might not be the best practices, so if you have anything in mind don't hes
     cd twitcher
     ./install.sh
 
+    You have installed Django's auth system, and don't have any superusers defined.
+    Would you like to create one now? (yes/no): yes
+
 ## Running
 
     ./run.sh

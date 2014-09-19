@@ -1,7 +1,6 @@
 *.sqlite3
 *.pyc
 *.idea
-*.css
 !static/third_party/*
 *swp
 config.ini
