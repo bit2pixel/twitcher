@@ -21,8 +21,13 @@ body, html {
   -o-filter: blur(100px);
   -ms-filter: blur(100px);
   filter: blur(100px);
-  height: 150%;
-  width: 150%;
+  -webkit-transform: scale(5);
+  -moz-transform: scale(5);
+  -o-transform: scale(5);
+  -ms-transform: scale(5);
+  -webkit-transform: translate3d(0, 0, 0);
+  height: 100%;
+  width: 100%;
   position: fixed;
   z-index: 1; }
 
@@ -63,14 +68,13 @@ body, html {
   .timeline .tweet {
     font-family: "Raleway", sans-serif;
     width: 480px;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     display: table;
     opacity: 1;
     -webkit-transition: 500ms ease-in-out all; }
     .timeline .tweet .image {
-      display: inline-block;
+      display: table-cell;
       border-radius: 50px;
-      vertical-align: middle;
       width: 48px;
       margin-right: 15px; }
       .timeline .tweet .image img {
@@ -80,10 +84,12 @@ body, html {
           opacity: 1; }
     .timeline .tweet .content {
       display: table-cell;
-      vertical-align: middle; }
+      vertical-align: middle;
+      padding-left: 25px; }
       .timeline .tweet .content .photo {
         width: 400px;
-        border-radius: 4px; }
+        border-radius: 4px;
+        margin-top: 20px; }
     .timeline .tweet.ng-hide {
       opacity: 0; }
     .timeline .tweet.ng-enter {
