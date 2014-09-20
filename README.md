@@ -38,3 +38,11 @@ Don't forget your password. It will be required to play with Twitcher
 ## Screenshot
 
 ![twitcher](https://raw.githubusercontent.com/bit2pixel/twitcher/master/screenshot.jpg)
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Renan Cakirerk (bit2pixel)
+
+**Massachusetts Institute of Technology license (MIT):** You are allowed to use, modify and distribute copies of the software as long as you allow the same rights to the person to whom you distribute the software
