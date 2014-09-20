@@ -34,3 +34,7 @@ Don't forget your password. It will be required to play with Twitcher
 - At first run enter your admin username and password you've created while installing.
 
 - When you login, type a twitter username. Thats all!
+
+## Screenshot
+
+![twitcher](https://raw.githubusercontent.com/bit2pixel/twitcher/master/screenshot.jpg)
