@@ -20,8 +20,6 @@ SECRET_KEY = ''.join([random.SystemRandom().choice(
 
 SECRET_KEY = SECRET_KEY.replace('%', '_')
 
-config_file = open('config.ini', 'w')
-
 # WRITE DJANGO SECRET
 Config.add_section('DJANGO')
 Config.set('DJANGO', 'SECRET_KEY', SECRET_KEY)
@@ -70,5 +68,6 @@ Config.set('TWITTER_API', 'TWITTER_OAUTH_TOKEN', TWITTER_OAUTH_TOKEN)
 Config.set('TWITTER_API', 'TWITTER_OAUTH_TOKEN_SECRET', TWITTER_OAUTH_TOKEN_SECRET)
 
 # CREATE THE CONFIG FILE
+config_file = open('config.ini', 'w')
 Config.write(config_file)
 config_file.close()
