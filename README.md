@@ -2,7 +2,7 @@
 Twitcher
 ========
 
-Twitcher is a little read-only twitter client made for messing around with **AngularJS + Django + Twitter API**.
+Twitcher is a little read-only twitter client made for messing around with **AngularJS + Django + Sass + Twitter API**.
 
 You can see how to consume an API with ngResource.
 These might not be the best practices, so if you have anything in mind don't hesitate to create a pull request.
