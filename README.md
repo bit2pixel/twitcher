@@ -13,10 +13,14 @@ These might not be the best practices, so if you have anything in mind don't hes
 
 ## Installing
 
-Run the install script and follow the instructions.
+Run the install script and follow the instructions. This script provides you with step-by-step instructions for getting API access on Twitter. It will create your config.ini file for you with your credentials.
 
     cd twitcher
     ./install.sh
+    
+    Enter your API key -> ******
+    Enter your API secret -> ******
+    Enter your PIN CODE -> ******
 
     You have installed Django's auth system, and don't have any superusers defined.
     Would you like to create one now? (yes/no): yes
